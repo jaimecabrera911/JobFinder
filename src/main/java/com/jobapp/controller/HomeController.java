@@ -1,6 +1,11 @@
 package com.jobapp.controller;
 
+import java.util.Collection;
 import java.util.Date;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.ListIterator;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -29,6 +34,17 @@ public class HomeController {
         model.addAttribute("vigente", vigente);
 
         return "home";
+    }
+    
+    @GetMapping("/listado")
+    public String lista(Model model){
+    	List<String> lista=new LinkedList<>();
+    	lista.add("Desarrollador Web");
+    	lista.add("Desarrollador Jr");
+    	lista.add("Desarrollador Senior");
+    	lista.add("Desarrollador Full Stack");
+    	model.addAttribute("empleos", lista);
+    	return "lista";
     }
 
 }
