@@ -17,20 +17,25 @@ public class Vacante {
 	
 	private Double salario;
 	
+	private Integer destacado;
+	
 	
 
 	public Vacante() {
 		super();
 	}
 
-	public Vacante(Long id, String nombre, String descripcion, Date fecha, Double salario) {
+	
+	public Vacante(Long id, String nombre, String descripcion, Date fecha, Double salario, Integer destacado) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.descripcion = descripcion;
 		this.fecha = fecha;
 		this.salario = salario;
+		this.destacado = destacado;
 	}
+
 
 	public Long getId() {
 		return id;
@@ -72,10 +77,21 @@ public class Vacante {
 		this.salario = salario;
 	}
 
+
+	public Integer getDestacado() {
+		return destacado;
+	}
+
+
+	public void setDestacado(Integer destacado) {
+		this.destacado = destacado;
+	}
+
+
 	@Override
 	public String toString() {
 		return "Vacante [id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion + ", fecha=" + fecha
-				+ ", salario=" + salario + "]";
+				+ ", salario=" + salario + ", destacado=" + destacado + "]";
 	}
 	
 	

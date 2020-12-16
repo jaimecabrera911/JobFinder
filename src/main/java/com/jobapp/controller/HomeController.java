@@ -90,13 +90,13 @@ public class HomeController {
 			vacante1.setSalario(3500000.0);
 
 			vacante1.setFecha(sdf.parse("11-09-2020"));
+			vacante1.setDestacado(0);
 			vacantes.add(vacante1);
 			Vacante vacante2 = new Vacante();
 
 			vacante2.setId(2L);
 			vacante2.setNombre("Desarrolladores Backend");
-			vacante2.setDescripcion(
-					"Ingenieros de sistemas, electrónica o afines.\r\n"
+			vacante2.setDescripcion("Ingenieros de sistemas, electrónica o afines.\r\n"
 					+ "Experiencia de tres años en desarrollo de Software demostrable en implementación de aplicaciones modernas como:\r\n"
 					+ "Tecnologías para la implementación de microservicios: Docker, Kubernetes, SpringBoot.\r\n"
 					+ "Principios SOLID y DRY, patrones de diseño GoF y de microservicios y de buenas prácticas de desarrollo (TDD).\r\n"
@@ -104,18 +104,17 @@ public class HomeController {
 					+ "Cloud Computing: Soluciones IaaS y PaaS en nubes públicas AWS y Azure.\r\n"
 					+ "Lenguajes de programación JavaEE (Spring Framework) y/o nodeJs.\r\n"
 					+ "Exposición y consumo de servicios web SOAP y de API RESTful con contratos Swagger (open API).\r\n"
-					+ "Bases de datos relacionales y NoSQL.\r\n"
-					+ "Metodologías ágiles de desarrollo como SCRUM.");
+					+ "Bases de datos relacionales y NoSQL.\r\n" + "Metodologías ágiles de desarrollo como SCRUM.");
 			vacante2.setSalario(3500000.0);
 			vacante2.setFecha(sdf.parse("27-09-2020"));
+			vacante2.setDestacado(1);
 
 			vacantes.add(vacante2);
 			Vacante vacante3 = new Vacante();
 
 			vacante3.setId(3L);
 			vacante3.setNombre("Ingeniero Backend Java Sr.");
-			vacante3.setDescripcion(
-					"Ingeniero de Sistemas, Informàtico o carreras afines.\r\n"
+			vacante3.setDescripcion("Ingeniero de Sistemas, Informàtico o carreras afines.\r\n"
 					+ "Mínimo de 5 a 8 años de experiencia como ingeniero de software. (Excluyente)\r\n"
 					+ "Habilidades sólidas de comunicación verbal en inglés: Habilidad demostrada para explicar temas técnicos complejos a audiencias tanto técnicas como no técnicas. (Excluyente).\r\n"
 					+ "Habilidades de comunicación escrita en inglés muy sólidas para poder redactar documentación técnica a un nivel de calidad que pueda ser presentada a las Autoridades Reguladoras.\r\n"
@@ -130,20 +129,20 @@ public class HomeController {
 			vacante3.setSalario(4500000.0);
 
 			vacante3.setFecha(sdf.parse("11-09-2020"));
+			vacante3.setDestacado(1);
 			vacantes.add(vacante3);
 			Vacante vacante4 = new Vacante();
 
 			vacante4.setId(4L);
 			vacante4.setNombre("Desarrollador Backend Senior");
-			vacante4.setDescripcion(
-					"Profesional de Sistemas o afines.\r\n"
-					+ "\r\n"
+			vacante4.setDescripcion("Profesional de Sistemas o afines.\r\n" + "\r\n"
 					+ "Experiencia laboral de más de 5 años de carrera general y 3 años como desarrollador Java, Spring Boot, SQL, GIT, TDD JUnit, DevOps (Pipelines CI,CD,RM), AWS específicamente los servicios: EKS, S3, RDS, Secretos, Docker, Filosofía Agile, Clean Architecture y Principios Solid.\r\n"
-					+ "\r\n"
-					+ "Deseable conocimiento en Reactor.");
+					+ "\r\n" + "Deseable conocimiento en Reactor.");
 			vacante4.setSalario(6000000.0);
 
 			vacante4.setFecha(sdf.parse("11-09-2020"));
+			vacante4.setDestacado(0);
+
 			vacantes.add(vacante4);
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block

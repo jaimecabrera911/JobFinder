@@ -13,7 +13,7 @@
 
 <body>
 
-	<h1>Tabla de vacantes</h1>
+	<h1>Lista de vacantes</h1>
 
 	<table class="table table-bordered table-striped">
 		<thead>
@@ -23,6 +23,7 @@
 				<th scope="col">Fecha</th>
 				<th scope="col">Salario</th>
 				<th scope="col">Descripción</th>
+				<th scope="col">Destacado</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -32,6 +33,11 @@
 				<td style="width: 250px" th:text="${vacante.fecha}"></td>
 				<td th:text="'$' + ${vacante.salario}"></td>
 				<td th:text="${vacante.descripcion}"></td>
+				<!--  <td th:text="${vacante.destacado==1 ?'Si':'No'}"></td>-->
+				<td>
+					<span th:if="${vacante.destacado==1}" class="badge bg-success" th:text="Si"></span>
+					<span th:unless="${vacante.destacado==1}" class="badge bg-danger" th:text="No"></span>
+				</td>
 			</tr>
 		</tbody>
 	</table>
