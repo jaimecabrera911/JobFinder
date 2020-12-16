@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.jobapp.model.Vacante;
 
-import javassist.Loader.Simple;
-
 @Controller
 @RequestMapping
 public class HomeController {
@@ -81,7 +79,7 @@ public class HomeController {
 		List<Vacante> vacantes = new LinkedList<>();
 		try {
 			Vacante vacante1 = new Vacante();
-			
+
 			vacante1.setId(1L);
 			vacante1.setImage("empresa1.png");
 			vacante1.setNombre("Desarrollador Full Stack");
@@ -92,7 +90,7 @@ public class HomeController {
 			vacante1.setFecha(sdf.parse("11-09-2020"));
 			vacante1.setDestacado(0);
 			vacantes.add(vacante1);
-			
+
 			Vacante vacante2 = new Vacante();
 			vacante2.setId(2L);
 			vacante2.setImage("empresa2.png");
@@ -110,7 +108,7 @@ public class HomeController {
 			vacante2.setFecha(sdf.parse("27-09-2020"));
 			vacante2.setDestacado(1);
 			vacantes.add(vacante2);
-			
+
 			Vacante vacante3 = new Vacante();
 			vacante3.setId(3L);
 			vacante3.setImage("empresa3.png");
@@ -131,7 +129,7 @@ public class HomeController {
 			vacante3.setFecha(sdf.parse("11-09-2020"));
 			vacante3.setDestacado(1);
 			vacantes.add(vacante3);
-			
+
 			Vacante vacante4 = new Vacante();
 			vacante4.setId(4L);
 			vacante4.setImage("empresa4.png");
