@@ -81,20 +81,21 @@ public class HomeController {
 		List<Vacante> vacantes = new LinkedList<>();
 		try {
 			Vacante vacante1 = new Vacante();
-
+			
 			vacante1.setId(1L);
+			vacante1.setImage("empresa1.png");
 			vacante1.setNombre("Desarrollador Full Stack");
 			vacante1.setDescripcion(
 					"Encargado de manejar cada uno de los aspectos relacionados con la creación y el mantenimiento de una aplicación web. "
 							+ "Para ello es fundamental que el desarrollador Full Stack tenga conocimientos en desarrollo Front-End y Back-End.");
 			vacante1.setSalario(3500000.0);
-
 			vacante1.setFecha(sdf.parse("11-09-2020"));
 			vacante1.setDestacado(0);
 			vacantes.add(vacante1);
+			
 			Vacante vacante2 = new Vacante();
-
 			vacante2.setId(2L);
+			vacante2.setImage("empresa2.png");
 			vacante2.setNombre("Desarrolladores Backend");
 			vacante2.setDescripcion("Ingenieros de sistemas, electrónica o afines.\r\n"
 					+ "Experiencia de tres años en desarrollo de Software demostrable en implementación de aplicaciones modernas como:\r\n"
@@ -108,11 +109,11 @@ public class HomeController {
 			vacante2.setSalario(3500000.0);
 			vacante2.setFecha(sdf.parse("27-09-2020"));
 			vacante2.setDestacado(1);
-
 			vacantes.add(vacante2);
+			
 			Vacante vacante3 = new Vacante();
-
 			vacante3.setId(3L);
+			vacante3.setImage("empresa3.png");
 			vacante3.setNombre("Ingeniero Backend Java Sr.");
 			vacante3.setDescripcion("Ingeniero de Sistemas, Informàtico o carreras afines.\r\n"
 					+ "Mínimo de 5 a 8 años de experiencia como ingeniero de software. (Excluyente)\r\n"
@@ -127,22 +128,20 @@ public class HomeController {
 					+ "Experiencia con herramientas como Github, Jenkins. Docker y Kubernetes es deseable.\r\n"
 					+ "Experiencia en el desarrollo y la ampliación de APIs internas y en la escritura de código del lado del cliente que interactúe con otras APIs (RESTful).");
 			vacante3.setSalario(4500000.0);
-
 			vacante3.setFecha(sdf.parse("11-09-2020"));
 			vacante3.setDestacado(1);
 			vacantes.add(vacante3);
+			
 			Vacante vacante4 = new Vacante();
-
 			vacante4.setId(4L);
+			vacante4.setImage("empresa4.png");
 			vacante4.setNombre("Desarrollador Backend Senior");
 			vacante4.setDescripcion("Profesional de Sistemas o afines.\r\n" + "\r\n"
 					+ "Experiencia laboral de más de 5 años de carrera general y 3 años como desarrollador Java, Spring Boot, SQL, GIT, TDD JUnit, DevOps (Pipelines CI,CD,RM), AWS específicamente los servicios: EKS, S3, RDS, Secretos, Docker, Filosofía Agile, Clean Architecture y Principios Solid.\r\n"
 					+ "\r\n" + "Deseable conocimiento en Reactor.");
 			vacante4.setSalario(6000000.0);
-
 			vacante4.setFecha(sdf.parse("11-09-2020"));
 			vacante4.setDestacado(0);
-
 			vacantes.add(vacante4);
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
