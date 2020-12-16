@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http//www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Tabla Vacantes</title>
+</head>
+<body>
+
+	<h1>Tabla de vacantes</h1>
+
+	<table border="1">
+		<tr>
+			<th>#</th>
+			<th>Nombre</th>
+			<th>Descripción</th>
+			<th>Fecha</th>
+			<th>Salario</th>
+		</tr>
+		<tr th:each="vacante : ${vacantes}">
+			<td scope="row" th:text="${vacante.id}"></td>
+			<td th:text="${vacante.nombre}"></td>
+			<td th:text="${vacante.descripcion}"></td>
+			<td th:text="${vacante.fecha}"></td>
+			<td th:text="'$' + ${vacante.salario}"></td>
+		</tr>
+	</table>
+
+
+</body>
+</html>
